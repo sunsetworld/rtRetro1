@@ -561,6 +561,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: walkwayplank
       objectReference: {fileID: 0}
+    - target: {fileID: 7804804904917827106, guid: 6bb8e4ffbadedd44abbcd94d35620ca1,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: bd551820887600a44aee43170ed4ee6c,
+        type: 2}
     - target: {fileID: 8173180703033329782, guid: 6bb8e4ffbadedd44abbcd94d35620ca1,
         type: 3}
       propertyPath: m_RootOrder
