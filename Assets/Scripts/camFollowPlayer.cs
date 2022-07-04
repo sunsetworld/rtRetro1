@@ -5,7 +5,6 @@ using UnityEngine;
 public class camFollowPlayer : MonoBehaviour
 {
     public Transform player;
-    public Vector3 offset2;
     public Vector3 offset3;
 
     public int toggleNum = 3;
@@ -31,10 +30,6 @@ public class camFollowPlayer : MonoBehaviour
         {
             toggleNum = 1;
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            toggleNum = 2;
-        }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             toggleNum = 3;
@@ -48,10 +43,6 @@ public class camFollowPlayer : MonoBehaviour
         {
             transform.position = player.position;
 
-        }
-        else if (toggleNum == 2)
-        {
-            transform.position = player.position + offset2;
         }
         else if (toggleNum == 3)
         {
