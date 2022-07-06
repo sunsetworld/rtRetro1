@@ -51,11 +51,14 @@ public class P1Move : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        rb.AddForce(0, 0, ForwardForce / 2 * Time.deltaTime); // Moves player forward at half speed.
 
         if (MoveForward)
         {
             rb.AddForce(0, 0, ForwardForce * Time.deltaTime); // Moves player forward at full speed.
+        }
+        else
+        {        
+            rb.AddForce(0, 0, ForwardForce / 2 * Time.deltaTime); // Moves player forward at half speed.
         }
 
         if (MoveRight)
@@ -68,4 +71,6 @@ public class P1Move : MonoBehaviour
         }
 
     }
+
+
 }
